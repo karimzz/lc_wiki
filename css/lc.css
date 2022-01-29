@@ -1,0 +1,412 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mian-color:#1f49b6;
+    --footer-icon:#5d5d5d;
+    --footer-color:#727579;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;}
+/* Start Nav bar */
+
+nav{
+    width: 100%;
+    max-width: 100%;
+}
+.container{
+    width: 85%;
+    margin-left: auto;
+    margin-right:auto ;
+}
+nav .container .first{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+nav  .container {
+    display: flex;
+    flex-direction: column;
+}
+nav .container .first .si i{
+margin-right: 10px;
+font-size: 25px;
+position: relative;
+color: rgb(60, 60, 236);
+}
+nav .container .first .si i::after{
+    content: "0";
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background:#ff9280;
+    font-size:14px;
+    font-weight: normal;
+    color: white;
+    position: absolute;
+    left: -15px;
+    text-align: center;
+    top: 5px;
+}
+nav .container .first .si a{
+    color: black;
+    text-decoration: none;
+    transition: .2s;
+    font-weight: normal;
+
+}
+nav .container .first .si a:hover{
+    color: rgb(60, 60, 236);
+}
+nav .container .first .si a:first-child:hover{
+    color: blue;
+}
+nav .first .search{
+    width: 60%;
+    border-bottom: 1px solid var(--mian-color);
+}
+nav .first .search i{
+    color: var(--mian-color);
+    padding-bottom: 6px;
+    direction: ltr;
+    font-size: 20px;
+}
+
+nav .first .search input[type="search"]{
+    width: 96%;
+    /* padding: 20px 3px 0; */
+    direction: rtl;
+    border: none;
+    outline: none;
+    font-size: 27px;
+
+}
+nav .first .search input[type="search"]::placeholder{
+    direction: rtl;
+    font-size:27px;
+    color:#cfd2d3 ;
+    
+}
+nav .container .first .logo a{
+    color: #004b9c;
+    text-decoration:none;
+    font-size: 35px;
+    letter-spacing: -4px;
+}
+nav .container .first .logo a h1{
+    font-weight: bold;
+
+}
+ nav .container .second  .word{
+color: white;
+text-decoration: none;
+background: var(--mian-color);
+width: 50px;
+border-radius:20px ;
+padding: 4px 20px;
+margin-right: 3px;
+
+}
+.second{
+    text-align: center;
+    margin-top: -35px;
+}
+.second a:last-child{
+    color: black;
+    text-decoration:none;
+    font-weight: bold;
+    margin-left:22px;
+    font-size: 21px;
+    letter-spacing: 1px;
+
+}
+
+/* End Nav bar */
+
+/*  Start Portfolio */
+.portfolio .container .lin{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.portfolio .container .lin a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight:100;
+    margin-right:40px;
+}
+.portfolio .container .lin a:hover{
+    color:var(--mian-color);
+}
+.portfolio .container .lin a:first-child{
+    color: rgb(231, 12, 12);
+}
+.portfolio .container .lin a:first-child:hover{
+    color: rgb(126, 4, 4);
+
+}
+
+.portfolio .im-one{
+    margin-top: 50px;
+    width: 100%;
+}
+.portfolio .im-one img{
+    width: 100%;
+    height: 110px;
+}
+.portfolio .im-one img:nth-child(2){
+    width: 0;
+    height: 50px;
+}
+@media (width:767px){
+    .portfolio .im-one img:first-child{
+        width:0;
+    }
+    .portfolio .im-one img:nth-child(2){
+        width: 100%;
+    }
+    
+}
+.portfolio .im-two{
+    position: relative;
+}
+
+.portfolio .im-two img{
+    width: 100%;
+    max-width: 100%;
+    margin-top: -20px;
+    z-index: 2;
+    transition: .3s;
+}
+.portfolio .im-two  i{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:0;
+    color: #7777;
+    font-size: 60px;
+    z-index: 1;
+    width: 30px;
+    height: 60px;
+    background:white ;
+    color: rgb(184, 179, 179);
+    /* font-weight: normal; */
+}
+
+.portfolio .im-two i:nth-child(2){
+    left: 97.3%;
+}
+
+.portfolio .im-two span{
+    width: 17px;
+    height:17px;
+    border-radius: 50%;
+    background: rgb(163, 163, 163);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.portfolio .container{
+    overflow: hidden;
+}
+.portfolio .im-two .lll{
+    transform: translateX(80%);
+    margin-left: 11px;
+    background: black;
+}
+
+.portfolio .container .im-three {
+    margin-top: 30px;
+}
+
+.portfolio .container .im-three img{
+    width: 100%;
+    max-width: 100%;
+    transition: .3s;
+}
+#product a{
+    width: calc(98% / 5);
+    margin-right: 30px;
+    position: relative;
+    transition: .3s;
+}
+
+#product a img:hover{
+transform: translateY(-20px);
+}
+#product .container{
+    margin-top: 40px;
+}
+#product a img{
+    width: 283px;
+    max-width: 100%;
+    position: relative;
+    transition: .3s;
+
+}
+
+.lat .container{
+    background: rgb(247, 245, 245);
+    /* height: 300px; */
+}
+
+.lat .container a{
+    width: calc(97% /3);
+}
+.lat a img{
+    width: 470px;
+    max-width: 100%;
+    margin-right: 20px;
+}
+.lat p{
+    padding: 30px;
+    line-height: 2;
+    font-size: 35px;
+    color: black;
+    font-weight: normal;
+    direction: rtl;
+}
+
+.of{
+    margin-top: 120px;
+}
+.poster{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #e6f4f1;
+    padding: 7px 50px 2px;
+    margin-top: 100px;
+    height: 140px;
+
+}
+.poster a{
+    color: black;
+    text-decoration:none;
+    /* padding: 30px; */
+    line-height: 2;
+}
+
+.poster a:hover{
+    text-decoration:underline
+}
+
+.poster a i{
+    margin-left: 20px;
+}
+footer{
+    background:#f8f8f9;
+    margin-top:20px ;
+   
+}
+footer .container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    height: 40vh;
+    align-items: center;
+}
+footer .container .one {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+footer .container .one .icon a{
+    display: inline-block;
+    border: 3px solid var(--footer-icon);
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+    color:var(--footer-icon);
+    margin-bottom: 50px;
+}
+
+footer .container .one .icon a:hover{
+    color: var(--mian-color);
+    border: 3px solid var(--mian-color);
+
+}
+footer .container .one .icon a i:hover{
+    color: var(--mian-color);
+}
+
+footer .container .one .icon a i{
+    font-size: 27px;
+    
+    color: var(--footer-icon);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-82%,-50%);
+}
+footer .container .one .btn-one a,
+footer .container .one .btn-two a
+{
+    color: var(--mian-color);
+    text-decoration: none; 
+}
+footer .container .one .btn-one{
+    margin-bottom: 25px;
+}
+
+footer .container .one .btn-one ,
+footer .container .one .btn-two {
+background: transparent;
+text-align: center;
+width: 140px;
+border: 1px solid var(--mian-color);
+padding: 20px 0;
+
+}
+
+footer .container .one .btn-one a:hover,
+footer .container .one .btn-two a:hover{
+    text-decoration: underline;
+}
+footer .container .one .btn-two a{
+    color: black;
+}
+
+footer .container .one .btn-two{
+    color: black;
+    border: 1px solid black;
+}
+
+footer .two a{
+    display: block;
+    color: #5f6466;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: .3s;
+}
+footer .two a:hover,footer .three a:hover{
+    color: var(--mian-color);
+}
+footer .three a{
+    display: block;
+    display: block;
+    color: #5f6466;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+
+
+
+
+
+/*  End Portfolio */
